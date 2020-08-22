@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  height: 100%;
+}
+
+.App {
+  text-align: center;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(45, 171, 253, 1) 100%
+  );
+  height: 100vh;
+}
+
+.App-footer {
+  background: linear-gradient(to bottom right, #3498db, #2c3e50);
+  padding: 20px;
+  color: white;
+}
+
+.InfoSettings {
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(45, 171, 253, 1) 100%
+  );
+}
+h1 {
+  text-shadow: 0px 0px 30px white, 0px 0px 30px white, 0px 0px 30px white,
+    0px 0px 10px #553300, 0px 0px 10px #553300;
+}
+
+a {
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.wrong {
+  color: rgb(255, 67, 67);
+  text-decoration: line-through;
+}
+
+.correct {
+  color: rgb(0, 102, 104);
+}
+.done {
+  margin-left: 5px;
+}
+
+.Current {
+  float: left;
+  color: rgb(0, 102, 104);
+}
+
+.in-progress {
+  color: rgb(0, 61, 63);
+  margin-right: 5px;
+}
+
+input {
+  border: 0px solid black;
+  border-width: 0 0 0 0;
+  outline-color: transparent;
+  outline-style: none;
+  width: 0;
+  padding: 0;
+  margin: 0;
+}
+input#word-input {
+  width: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.input-wrapper {
+  display: inline-flex;
+  font-family: "Montserrat", serif;
+  font-size: 25px;
+  overflow: hidden;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /* background-color: rgb(212, 250, 255); */
+  background-color: white;
+  width: 100%;
+}
+.before {
+  /* justify-content: center; */
+  text-align: left;
+  font-family: "Montserrat", serif;
+  font-size: 25px;
+  overflow: hidden;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /* background-color: rgb(212, 250, 255); */
+  background-color: white;
+  width: 49.5%;
+  /* margin-left: 0.2%; */
+}
+.inner-before {
+  width: 5000px;
+  overflow: hidden;
+}
+
+.Completed {
+  width: 5000px;
+  float: right;
+}
+.outer-completed {
+  text-align: right;
+  font-family: "Montserrat", serif;
+  font-size: 25px;
+  overflow: hidden;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /* background-color: rgb(212, 250, 255); */
+  background-color: white;
+  width: 50%;
+  text-align: right;
+  white-space: nowrap;
+  float: right;
+}
+
+input {
+  text-align: center;
+  font-family: "Montserrat", serif;
+  color: rgb(0, 61, 63);
+  font-size: 25px;
+}
+
+/* NEXT */
+.Next {
+  overflow: hidden;
+  color: rgb(0, 61, 63);
+}
+
+.gameBlocked {
+  text-decoration: line-through;
+}
+
+.highlight {
+  border-color: rgb(255, 83, 83);
+}
+
+.Settings {
+  background-color: #3498db;
+  background: linear-gradient(to bottom right, #3498db, #2c3e50);
+  color: white;
+}
+.Stats {
+  padding-top: 10px;
+  color: white;
+  text-shadow: 0px 0px 30px white, 0px 0px 30px white, 0px 0px 30px white,
+    0px 0px 10px #553300, 0px 0px 10px #553300;
+}
+
+.viewGrid {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3rem;
+  /* text-shadow: 0px 0px 1px white, 0px 0px 30px white, 0px 0px 30px white,
+    0px 0px 10px #00709c, 0px 0px 10px #005577; */
+}
+
+.viewGrid p {
+  font-size: 2rem;
+}
+
+.timeLeft {
+  font-size: 2rem;
+  /* text-shadow: 0px 0px 1px white, 0px 0px 1px white, 0px 0px 30px white,
+    0px 0px 1px #553300, 0px 0px 1px #553300; */
+}
+.secondsLeft {
+  font-size: 3rem;
+  margin: 0;
+  /* text-shadow: 0px 0px 1px white, 0px 0px 1px white, 0px 0px 30px white,
+    0px 0px 1px #553300, 0px 0px 1px #553300; */
+}
+
+.yellowTime {
+  color: #f1c40f;
+}
+.redTime {
+  color: #e74c3c;
+}
+.whiteTime {
+  color: white;
+}
+button {
+  background: transparent;
+  color: white;
+  width: 12rem;
+  margin-bottom: 2rem;
+  border: 1px solid rgb(0, 207, 211);
+  font-size: 2em;
+  padding: 5px;
+  border-radius: 5%;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  text-shadow: 0px 0px 1px white, 0px 0px 1px white, 0px 0px 30px white,
+    0px 0px 1px #553300, 0px 0px 1px #553300;
+}

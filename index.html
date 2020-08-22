@@ -1,0 +1,71 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#000000" />
+
+    <title>Typing Speed Test</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body cz-shortcut-listen="true">
+    <div id="root">
+      <div class="App">
+        <div class="InfoSettings">
+          <div class="Stats">
+            <h1>DEANLAZX TYPE SPEED GAME</h1>
+            <div class="viewGrid">
+              <div>
+                WORD/MIN
+                <p class="countCorrect"></p>
+              </div>
+              <div>
+                CHAR/MIN
+                <p class="charsPerMin"></p>
+              </div>
+              <div>
+                ACCURACY
+                <p class="accuracy"></p>
+              </div>
+            </div>
+
+            <div class="timeLeft">
+              <p class="secondsLeft">60 s</p>
+              <p class="animation">...</p>
+            </div>
+          </div>
+          <button type="button" onclick="{handleReset()}">
+            RESET
+          </button>
+        </div>
+        <div class="input-wrapper">
+          <!-- <div class="outer-completed"> -->
+            <div class="outer-completed">
+          <div class="Completed"></div></div>
+          <div class="before">
+            <div class="inner-before">
+            <div onclick="{colorInput()}" class="Current">
+              <span id="done" class="done"></span>
+              <input
+                id="word-input"
+                onkeydown="{handleKeyDown(event)}"
+                oninput="{handleChange(event)}"
+                value=""
+              />
+              <span class="in-progress"></span>
+            </div>
+            <div class="Next"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="./main.js"></script>
+  </body>
+</html>
