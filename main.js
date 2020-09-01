@@ -83,7 +83,7 @@ const startCountDown = () => {
 checkGameInterval = () => {
   if (GAME.timeLeft <= 0) {
     let interval = GAME.interval;
-    clearGameInterval(interval);
+    resetGame(interval);
     GAME = {
       ...GAME,
       gameBlocked: true,
@@ -109,7 +109,7 @@ const handleReset = () => {
   // timeLeft.classList.remove("yellowTime");
   // timeLeft.classList.remove("yellowTime");
   // timeLeft.classList.add("whiteTime");
-  clearGameInterval(GAME.interval);
+  resetGame(GAME.interval);
   GAME = {
     correctWords: [],
     wordsEntered: [],
