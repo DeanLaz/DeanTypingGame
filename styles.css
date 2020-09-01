@@ -58,11 +58,12 @@ a {
   color: rgb(0, 102, 104);
 }
 .done {
-  margin-left: 5px;
+  margin-left: 4px;
 }
 
 .Current {
   float: left;
+  margin-left: 5px;
   color: rgb(0, 102, 104);
 }
 
